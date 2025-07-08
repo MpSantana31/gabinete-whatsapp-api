@@ -5,12 +5,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configurações da API do WhatsApp
-WHATSAPP_TOKEN = os.getenv("WHATSAPP_TOKEN").strip()
+WHATSAPP_TOKEN = os.getenv("WHATSAPP_TOKEN")
 PHONE_ID = os.getenv("PHONE_ID")
 VERIFY_TOKEN = os.getenv("VERIFY_TOKEN")
 
 # Configurações da API do OpenRouter
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY").strip()
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_BASE_URL = os.getenv("OPENROUTER_BASE_URL", "https://api.openai.com/v1")
 
 # Configurações do Assistente
